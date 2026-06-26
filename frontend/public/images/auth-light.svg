@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="wall" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E8DCC8"/>
+      <stop offset="100%" stop-color="#C9B89A"/>
+    </linearGradient>
+    <linearGradient id="shelfWood" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6B5344"/>
+      <stop offset="100%" stop-color="#8B6F52"/>
+    </linearGradient>
+    <radialGradient id="lampGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFE8A8" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#FFE8A8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="windowLight" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#FFF5DC" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#E8D4B0" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="10"/></filter>
+  </defs>
+
+  <rect width="800" height="1200" fill="url(#wall)"/>
+  <ellipse cx="400" cy="280" rx="320" ry="280" fill="url(#windowLight)"/>
+
+  <!-- Window -->
+  <rect x="220" y="80" width="360" height="420" rx="6" fill="#5C4A38" opacity="0.4"/>
+  <rect x="240" y="100" width="320" height="380" rx="3" fill="#F5E6C8" opacity="0.55"/>
+  <line x1="400" y1="100" x2="400" y2="480" stroke="#8B7355" stroke-width="3" opacity="0.45"/>
+  <line x1="240" y1="290" x2="560" y2="290" stroke="#8B7355" stroke-width="3" opacity="0.45"/>
+
+  <!-- Left bookshelf -->
+  <rect x="40" y="120" width="140" height="900" fill="url(#shelfWood)" opacity="0.9"/>
+  <g opacity="0.8">
+    <rect x="55" y="160" width="110" height="28" fill="#8B3A4A"/>
+    <rect x="55" y="210" width="110" height="28" fill="#5C7A8B"/>
+    <rect x="55" y="260" width="110" height="28" fill="#8B6B3A"/>
+    <rect x="55" y="310" width="110" height="28" fill="#6B4A5C"/>
+    <rect x="55" y="360" width="110" height="28" fill="#4A6B5C"/>
+    <rect x="55" y="410" width="110" height="28" fill="#7A5C4A"/>
+    <rect x="55" y="460" width="110" height="28" fill="#5C5A7A"/>
+    <rect x="55" y="510" width="110" height="28" fill="#8B3A4A"/>
+    <rect x="55" y="560" width="110" height="28" fill="#5C7A8B"/>
+    <rect x="55" y="610" width="110" height="28" fill="#8B6B3A"/>
+    <rect x="55" y="660" width="110" height="28" fill="#6B4A5C"/>
+    <rect x="55" y="710" width="110" height="28" fill="#4A6B5C"/>
+    <rect x="55" y="760" width="110" height="28" fill="#7A5C4A"/>
+    <rect x="55" y="810" width="110" height="28" fill="#5C5A7A"/>
+    <rect x="55" y="860" width="110" height="28" fill="#8B3A4A"/>
+    <rect x="55" y="910" width="110" height="28" fill="#5C7A8B"/>
+  </g>
+
+  <!-- Right bookshelf -->
+  <rect x="620" y="120" width="140" height="900" fill="url(#shelfWood)" opacity="0.9"/>
+  <g opacity="0.8">
+    <rect x="635" y="160" width="110" height="28" fill="#5C7A8B"/>
+    <rect x="635" y="210" width="110" height="28" fill="#8B3A4A"/>
+    <rect x="635" y="260" width="110" height="28" fill="#6B4A5C"/>
+    <rect x="635" y="310" width="110" height="28" fill="#8B6B3A"/>
+    <rect x="635" y="360" width="110" height="28" fill="#4A6B5C"/>
+    <rect x="635" y="410" width="110" height="28" fill="#7A5C4A"/>
+    <rect x="635" y="460" width="110" height="28" fill="#5C5A7A"/>
+    <rect x="635" y="510" width="110" height="28" fill="#5C7A8B"/>
+    <rect x="635" y="560" width="110" height="28" fill="#8B3A4A"/>
+    <rect x="635" y="610" width="110" height="28" fill="#6B4A5C"/>
+    <rect x="635" y="660" width="110" height="28" fill="#8B6B3A"/>
+    <rect x="635" y="710" width="110" height="28" fill="#4A6B5C"/>
+    <rect x="635" y="760" width="110" height="28" fill="#7A5C4A"/>
+    <rect x="635" y="810" width="110" height="28" fill="#5C5A7A"/>
+    <rect x="635" y="860" width="110" height="28" fill="#5C7A8B"/>
+    <rect x="635" y="910" width="110" height="28" fill="#8B3A4A"/>
+  </g>
+
+  <!-- Reading desk -->
+  <rect x="200" y="880" width="400" height="20" rx="3" fill="#5C4838"/>
+  <rect x="230" y="900" width="16" height="120" fill="#4A3828"/>
+  <rect x="554" y="900" width="16" height="120" fill="#4A3828"/>
+
+  <!-- Lamp -->
+  <ellipse cx="280" cy="860" rx="80" ry="70" fill="url(#lampGlow)" filter="url(#blur)"/>
+  <rect x="268" y="820" width="24" height="60" fill="#8B7355"/>
+  <path d="M250 820 Q280 780 310 820 Z" fill="#D4A84A" opacity="0.9"/>
+  <ellipse cx="280" cy="808" rx="10" ry="16" fill="#FFF0A0"/>
+
+  <!-- Open book on desk -->
+  <g transform="translate(360, 850)">
+    <path d="M0 20 L60 10 L60 50 L0 55 Z" fill="#F5E6C8" stroke="#8B7355" stroke-width="1"/>
+    <path d="M60 10 L120 20 L120 55 L60 50 Z" fill="#EDE0C8" stroke="#8B7355" stroke-width="1"/>
+    <line x1="60" y1="10" x2="60" y2="52" stroke="#8B7355" stroke-width="1"/>
+  </g>
+
+  <!-- Floor -->
+  <rect x="0" y="1020" width="800" height="180" fill="#7A6048" opacity="0.7"/>
+
+  <!-- Floating dust motes -->
+  <circle cx="180" cy="400" r="2" fill="#FFF8E0" opacity="0.7"/>
+  <circle cx="620" cy="350" r="1.5" fill="#FFF8E0" opacity="0.6"/>
+  <circle cx="450" cy="500" r="2" fill="#FFF8E0" opacity="0.5"/>
+</svg>

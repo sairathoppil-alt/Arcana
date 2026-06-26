@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="nightSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0E0C18"/>
+      <stop offset="45%" stop-color="#1A1528"/>
+      <stop offset="100%" stop-color="#13111C"/>
+    </linearGradient>
+    <linearGradient id="nightFloor" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1A1528"/>
+      <stop offset="50%" stop-color="#252035"/>
+      <stop offset="100%" stop-color="#1A1528"/>
+    </linearGradient>
+    <radialGradient id="moonGlow" cx="50%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#B8A4E8" stop-opacity="0.35"/>
+      <stop offset="60%" stop-color="#6B5A9E" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#13111C" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="candleWarm" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#E8C878" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#E8C878" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="12"/>
+    </filter>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#nightSky)"/>
+  <ellipse cx="960" cy="320" rx="600" ry="400" fill="url(#moonGlow)"/>
+
+  <!-- Stars -->
+  <g fill="#E8E0F0" opacity="0.6">
+    <circle cx="200" cy="120" r="1.5"/>
+    <circle cx="450" cy="80" r="1"/>
+    <circle cx="720" cy="140" r="1.5"/>
+    <circle cx="1200" cy="90" r="1"/>
+    <circle cx="1500" cy="130" r="1.5"/>
+    <circle cx="1700" cy="70" r="1"/>
+    <circle cx="300" cy="200" r="1"/>
+    <circle cx="1600" cy="200" r="1.2"/>
+  </g>
+
+  <!-- Window -->
+  <rect x="560" y="120" width="800" height="520" rx="8" fill="#2A2540" opacity="0.6"/>
+  <rect x="590" y="150" width="740" height="460" rx="4" fill="#1E1B2E" opacity="0.8"/>
+  <line x1="960" y1="150" x2="960" y2="610" stroke="#3D3555" stroke-width="4" opacity="0.6"/>
+  <line x1="590" y1="380" x2="1330" y2="380" stroke="#3D3555" stroke-width="4" opacity="0.6"/>
+
+  <!-- Moon through window -->
+  <circle cx="960" cy="340" r="80" fill="#C9B8E8" opacity="0.25" filter="url(#glow)"/>
+  <circle cx="960" cy="340" r="50" fill="#E8E0F0" opacity="0.15"/>
+
+  <!-- Bookshelves left -->
+  <g opacity="0.9">
+    <rect x="80" y="180" width="320" height="700" fill="#1E1B2E"/>
+    <rect x="100" y="220" width="280" height="60" fill="#6B4A6B" opacity="0.7"/>
+    <rect x="100" y="300" width="280" height="60" fill="#4A5A7A" opacity="0.65"/>
+    <rect x="100" y="380" width="280" height="60" fill="#5A4A6B" opacity="0.6"/>
+    <rect x="100" y="460" width="280" height="60" fill="#4A6B6B" opacity="0.55"/>
+    <rect x="100" y="540" width="280" height="60" fill="#6B5A4A" opacity="0.5"/>
+    <rect x="100" y="620" width="280" height="60" fill="#5A5A7A" opacity="0.55"/>
+    <rect x="100" y="700" width="280" height="60" fill="#4A4A6B" opacity="0.5"/>
+  </g>
+
+  <!-- Bookshelves right -->
+  <g opacity="0.9">
+    <rect x="1520" y="180" width="320" height="700" fill="#1E1B2E"/>
+    <rect x="1540" y="220" width="280" height="60" fill="#4A5A7A" opacity="0.65"/>
+    <rect x="1540" y="300" width="280" height="60" fill="#6B4A6B" opacity="0.7"/>
+    <rect x="1540" y="380" width="280" height="60" fill="#5A4A6B" opacity="0.6"/>
+    <rect x="1540" y="460" width="280" height="60" fill="#4A6B6B" opacity="0.55"/>
+    <rect x="1540" y="540" width="280" height="60" fill="#6B5A4A" opacity="0.5"/>
+    <rect x="1540" y="620" width="280" height="60" fill="#5A5A7A" opacity="0.55"/>
+    <rect x="1540" y="700" width="280" height="60" fill="#4A4A6B" opacity="0.5"/>
+  </g>
+
+  <!-- Floor -->
+  <polygon points="0,880 1920,880 1920,1080 0,1080" fill="url(#nightFloor)"/>
+
+  <!-- Table -->
+  <ellipse cx="960" cy="820" rx="280" ry="60" fill="#0E0C18" opacity="0.6"/>
+  <rect x="760" y="700" width="400" height="24" rx="4" fill="#252035"/>
+  <rect x="780" y="724" width="20" height="100" fill="#1A1528"/>
+  <rect x="1120" y="724" width="20" height="100" fill="#1A1528"/>
+
+  <!-- Candle glow -->
+  <ellipse cx="826" cy="680" rx="60" ry="50" fill="url(#candleWarm)" filter="url(#glow)"/>
+  <ellipse cx="1094" cy="680" rx="60" ry="50" fill="url(#candleWarm)" filter="url(#glow)"/>
+  <g>
+    <rect x="820" y="660" width="12" height="40" fill="#E8E0F0" opacity="0.8"/>
+    <ellipse cx="826" cy="652" rx="6" ry="12" fill="#E8C878" opacity="0.95"/>
+  </g>
+  <g>
+    <rect x="1088" y="660" width="12" height="40" fill="#E8E0F0" opacity="0.8"/>
+    <ellipse cx="1094" cy="652" rx="6" ry="12" fill="#E8C878" opacity="0.95"/>
+  </g>
+
+  <!-- Floating books with glow -->
+  <g opacity="0.8" transform="rotate(-12 700 400)">
+    <rect x="680" y="380" width="48" height="64" rx="2" fill="#8B6BB8"/>
+    <rect x="680" y="380" width="48" height="64" rx="2" fill="#B8A4E8" opacity="0.2" filter="url(#glow)"/>
+  </g>
+  <g opacity="0.75" transform="rotate(8 1200 350)">
+    <rect x="1180" y="330" width="44" height="58" rx="2" fill="#6B8BB8"/>
+  </g>
+
+  <!-- Cat -->
+  <ellipse cx="900" cy="790" rx="36" ry="20" fill="#0E0C18" opacity="0.85"/>
+  <circle cx="920" cy="772" r="18" fill="#0E0C18" opacity="0.85"/>
+  <polygon points="908,758 912,742 918,758" fill="#0E0C18" opacity="0.85"/>
+  <polygon points="922,758 926,742 932,758" fill="#0E0C18" opacity="0.85"/>
+
+  <!-- Lavender sparkles -->
+  <circle cx="480" cy="200" r="3" fill="#C9B8F0" opacity="0.9"/>
+  <circle cx="1440" cy="240" r="2.5" fill="#B8A4E8" opacity="0.8"/>
+  <circle cx="760" cy="160" r="2" fill="#E8E0F0" opacity="0.7"/>
+  <circle cx="1180" cy="180" r="2.5" fill="#C9B8F0" opacity="0.85"/>
+</svg>

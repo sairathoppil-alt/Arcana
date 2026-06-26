@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="nightWall" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0E0C18"/>
+      <stop offset="100%" stop-color="#1A1528"/>
+    </linearGradient>
+    <radialGradient id="moonBeam" cx="50%" cy="25%" r="55%">
+      <stop offset="0%" stop-color="#B8A4E8" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#13111C" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="lanternGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#E8C878" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#E8C878" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bookGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#B8A4E8" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#B8A4E8" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="14"/></filter>
+  </defs>
+
+  <rect width="800" height="1200" fill="url(#nightWall)"/>
+  <ellipse cx="400" cy="260" rx="340" ry="300" fill="url(#moonBeam)"/>
+
+  <!-- Stars -->
+  <g fill="#E8E0F0" opacity="0.55">
+    <circle cx="120" cy="100" r="1.2"/>
+    <circle cx="680" cy="80" r="1"/>
+    <circle cx="550" cy="140" r="1.5"/>
+    <circle cx="300" cy="60" r="1"/>
+    <circle cx="700" cy="200" r="1.2"/>
+  </g>
+
+  <!-- Window with moon -->
+  <rect x="220" y="80" width="360" height="420" rx="6" fill="#2A2540" opacity="0.7"/>
+  <rect x="240" y="100" width="320" height="380" rx="3" fill="#1E1B2E" opacity="0.85"/>
+  <circle cx="400" cy="260" r="55" fill="#C9B8E8" opacity="0.2" filter="url(#glow)"/>
+  <circle cx="400" cy="260" r="35" fill="#E8E0F0" opacity="0.12"/>
+
+  <!-- Bookshelves -->
+  <rect x="40" y="120" width="140" height="900" fill="#1E1B2E" opacity="0.95"/>
+  <g opacity="0.75">
+    <rect x="55" y="160" width="110" height="28" fill="#6B4A6B"/>
+    <rect x="55" y="210" width="110" height="28" fill="#4A5A7A"/>
+    <rect x="55" y="260" width="110" height="28" fill="#5A4A6B"/>
+    <rect x="55" y="310" width="110" height="28" fill="#4A6B6B"/>
+    <rect x="55" y="360" width="110" height="28" fill="#6B5A4A"/>
+    <rect x="55" y="410" width="110" height="28" fill="#5A5A7A"/>
+    <rect x="55" y="460" width="110" height="28" fill="#6B4A6B"/>
+    <rect x="55" y="510" width="110" height="28" fill="#4A5A7A"/>
+    <rect x="55" y="560" width="110" height="28" fill="#5A4A6B"/>
+    <rect x="55" y="610" width="110" height="28" fill="#4A6B6B"/>
+    <rect x="55" y="660" width="110" height="28" fill="#6B5A4A"/>
+    <rect x="55" y="710" width="110" height="28" fill="#5A5A7A"/>
+    <rect x="55" y="760" width="110" height="28" fill="#6B4A6B"/>
+    <rect x="55" y="810" width="110" height="28" fill="#4A5A7A"/>
+    <rect x="55" y="860" width="110" height="28" fill="#5A4A6B"/>
+    <rect x="55" y="910" width="110" height="28" fill="#4A6B6B"/>
+  </g>
+
+  <rect x="620" y="120" width="140" height="900" fill="#1E1B2E" opacity="0.95"/>
+  <g opacity="0.75">
+    <rect x="635" y="160" width="110" height="28" fill="#4A5A7A"/>
+    <rect x="635" y="210" width="110" height="28" fill="#6B4A6B"/>
+    <rect x="635" y="260" width="110" height="28" fill="#5A4A6B"/>
+    <rect x="635" y="310" width="110" height="28" fill="#4A6B6B"/>
+    <rect x="635" y="360" width="110" height="28" fill="#6B5A4A"/>
+    <rect x="635" y="410" width="110" height="28" fill="#5A5A7A"/>
+    <rect x="635" y="460" width="110" height="28" fill="#4A5A7A"/>
+    <rect x="635" y="510" width="110" height="28" fill="#6B4A6B"/>
+    <rect x="635" y="560" width="110" height="28" fill="#5A4A6B"/>
+    <rect x="635" y="610" width="110" height="28" fill="#4A6B6B"/>
+    <rect x="635" y="660" width="110" height="28" fill="#6B5A4A"/>
+    <rect x="635" y="710" width="110" height="28" fill="#5A5A7A"/>
+    <rect x="635" y="760" width="110" height="28" fill="#6B4A6B"/>
+    <rect x="635" y="810" width="110" height="28" fill="#4A5A7A"/>
+    <rect x="635" y="860" width="110" height="28" fill="#5A4A6B"/>
+    <rect x="635" y="910" width="110" height="28" fill="#4A6B6B"/>
+  </g>
+
+  <!-- Desk -->
+  <rect x="200" y="880" width="400" height="20" rx="3" fill="#252035"/>
+  <rect x="230" y="900" width="16" height="120" fill="#1A1528"/>
+  <rect x="554" y="900" width="16" height="120" fill="#1A1528"/>
+
+  <!-- Lantern -->
+  <ellipse cx="280" cy="860" rx="90" ry="80" fill="url(#lanternGlow)" filter="url(#glow)"/>
+  <rect x="268" y="820" width="24" height="60" fill="#3D3555"/>
+  <rect x="256" y="800" width="48" height="28" rx="4" fill="#4A4060" stroke="#B8A4E8" stroke-width="1" opacity="0.8"/>
+  <ellipse cx="280" cy="808" rx="8" ry="14" fill="#E8C878" opacity="0.95"/>
+
+  <!-- Glowing open book -->
+  <ellipse cx="420" cy="870" rx="70" ry="50" fill="url(#bookGlow)" filter="url(#glow)"/>
+  <g transform="translate(360, 850)">
+    <path d="M0 20 L60 10 L60 50 L0 55 Z" fill="#2A2540" stroke="#B8A4E8" stroke-width="1" opacity="0.9"/>
+    <path d="M60 10 L120 20 L120 55 L60 50 Z" fill="#1E1B2E" stroke="#B8A4E8" stroke-width="1" opacity="0.9"/>
+    <line x1="60" y1="10" x2="60" y2="52" stroke="#B8A4E8" stroke-width="1" opacity="0.6"/>
+  </g>
+
+  <!-- Floor -->
+  <rect x="0" y="1020" width="800" height="180" fill="#0E0C18" opacity="0.8"/>
+
+  <!-- Sparkles -->
+  <circle cx="180" cy="400" r="2" fill="#C9B8F0" opacity="0.8"/>
+  <circle cx="620" cy="350" r="1.5" fill="#B8A4E8" opacity="0.7"/>
+  <circle cx="450" cy="500" r="2" fill="#E8E0F0" opacity="0.6"/>
+</svg>
